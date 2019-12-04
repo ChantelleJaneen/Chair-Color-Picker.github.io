@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Product Color Selector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<div class="col info">
+		<h1>Molded Chair</h1>
+		<p>A modern classic, this molded plastic chair is guaranteed to enhance the look and feel of any home.</p>
+		<p>
+			<span class="price">$89.99</span>
+			<span class="free-shipping">+ FREE Shipping</span>
+		</p>
+		<p class="choose-color">Choose a Color:</p>
+		<div class="color-swatches">
+			<div class="swatch selected" id="beige"></div>
+			<div class="swatch" id="yellow"></div>
+			<div class="swatch" id="blue"></div>
+			<div class="swatch" id="red"></div>
+		</div>
+	</div>
+
+	<div class="col photo">
+		<img id="product-photo" src="img/chair-beige@2x.jpg">
+	</div>
+	
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('.swatch').hover(function() {
+			$('#product-photo').attr('src', 'img/chair-' + $(this).attr('id') + '@2x.jpg');
+			$('.swatch').removeClass('selected');
+			$(this).addClass('selected');
+		});
+	});
+	</script>
+</body>
+</html>

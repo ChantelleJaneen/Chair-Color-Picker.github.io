@@ -1,0 +1,87 @@
+html {
+	font-size: 16px;
+}
+body {
+	margin: 0;
+	padding: 20px 20px 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	font-size: 2.4rem;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #333;
+	margin: 0;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid #bababa;
+	padding-bottom: .5rem;
+}
+p {
+	font-size: 1.125rem;
+	line-height: 1.5;
+	margin: 0;
+	margin-bottom: .8rem;
+}
+.price {
+	color: #d13030;
+	font-size: 1.8rem;
+}
+.free-shipping {
+	font-weight: 700;
+	white-space: nowrap;
+}
+.color-swatches {
+	font-size: 0;
+	margin-bottom: 1.5rem;
+}
+.swatch {
+	border: 1px solid #bbb;
+	display: inline-block;
+	width: 22%;
+	height: 40px;
+	margin: 0;
+	margin-right: calc( 4% - 3px );
+	cursor: pointer;
+}
+.swatch:last-child {
+	margin-right: 0;
+}
+.swatch#beige {
+	background-color: #d9d1c7;
+}
+.swatch#yellow {
+	background-color: #ffcd69;
+}
+.swatch#blue {
+	background-color: #8ff1f2;
+}
+.swatch#red {
+	background-color: #ff8282;
+}
+#product-photo {
+	width: 100%;
+  	box-shadow: 0 16px 20px 0 #bfbfbf;
+}
+.selected {
+	border-color: #000;
+}
+
+@media (min-width: 900px) {
+	body {
+		padding: 40px;
+		max-width: 1100px;
+		margin: auto;
+	}
+	h1 {
+		font-size: 2.7rem;
+	}
+	.col {
+		width: 48%;
+	}
+	.info {
+		float: right;
+	}
+	.photo {
+		float: left;
+	}
+}
